@@ -36,4 +36,3 @@ fun displayFibonacci(size:Int):List<Int>{
     }
     return numbers
 }
-}
