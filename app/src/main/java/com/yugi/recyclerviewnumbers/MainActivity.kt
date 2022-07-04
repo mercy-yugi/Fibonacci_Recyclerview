@@ -21,18 +21,18 @@ lateinit var binding: ActivityMainBinding
 
 fun displayFibonacci(size:Int):List<Int>{
     var numbers = listOf<Int>()
-    var first = 0
-    var firstsecond = 1
+    var first_number = 0
+    var initial_number = 1
     var positions = 0
 
     while (positions < size){
-        first = firstsecond
-        var sum = first + firstsecond
-        firstsecond = sum
+        first_number = initial_number
+        var sum = first_number + initial_number
+        initial_number = sum
 
         positions++
 
-        numbers+=firstsecond
+        numbers+=initial_number
     }
     return numbers
 }
