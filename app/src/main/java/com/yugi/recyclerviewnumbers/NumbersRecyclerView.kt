@@ -16,7 +16,7 @@ RecyclerView.Adapter<NumbersViewHolder>()
     }
 
     override fun onBindViewHolder(holder: NumbersViewHolder, position: Int) {
-        holder.tvNumbers.text= numberList.get(position).toString()
+        holder.tvNUmbers.text= numberList.get(position).toString()
     }
 
     override fun getItemCount(): Int {
@@ -24,5 +24,5 @@ RecyclerView.Adapter<NumbersViewHolder>()
     }
 }
 class NumbersViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
-    var tvNumbers=itemView.findViewById<TextView>(R.id.rvNumbers)
+    var tvNUmbers=itemView.findViewById<TextView>(R.id.rvNumbers)
 }
